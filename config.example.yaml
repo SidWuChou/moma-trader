@@ -1,0 +1,42 @@
+# MomaTrader Configuration
+# Copy this to config.yaml and fill in your values
+
+# Exchange Settings
+exchange: binance  # binance, coinbase, kraken
+api_key: YOUR_API_KEY
+api_secret: YOUR_API_SECRET
+testnet: true  # Use testnet first!
+
+# Trading Settings
+initial_capital: 1000  # USD
+max_position_size: 0.1  # 10% max per trade
+stop_loss: 0.05  # 5% stop loss
+take_profit: 0.15  # 15% take profit
+
+# Signal Settings
+min_confidence: 50  # Minimum confidence to trade
+
+# Scanning
+scan_interval: 3600  # Seconds between scans
+watchlist:
+  - BTC/USDT
+  - ETH/USDT
+  - SOL/USDT
+  - BNB/USDT
+  - XRP/USDT
+  - ADA/USDT
+  - DOGE/USDT
+  - AVAX/USDT
+
+# Notifications
+telegram_enabled: false
+telegram_token: YOUR_BOT_TOKEN
+telegram_chat_id: YOUR_CHAT_ID
+
+discord_enabled: false
+discord_webhook: YOUR_WEBHOOK_URL
+
+# AI Settings (optional)
+ai_provider: openai  # openai, anthropic
+ai_model: gpt-4
+ai_api_key: YOUR_AI_API_KEY
